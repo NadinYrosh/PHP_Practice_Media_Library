@@ -1,12 +1,18 @@
 <?php
 $pageTitle = "Full Catalog";
+$section = null;
 
-if ($_GET["cat"] == "Books") {
-  $pageTitle = "Books";
-} else if ($_GET["cat"] == "Movies") {
-  $pageTitle = "Movies";
-} else if ($_GET["cat"] == "Music") {
-  $pageTitle == "Music";
+if (isset($_GET['cat'])) {
+    if ($_GET["cat"] == "books") {
+      $pageTitle = "Books";
+      $section = "books";
+    } else if ($_GET["cat"] == "movies") {
+      $pageTitle = "Movies";
+      $section = "movies";
+    } else if ($_GET["cat"] == "music") {
+      $pageTitle == "Music";
+      $section = "music";
+    }
 }
 
 include("inc/header.php"); ?>
