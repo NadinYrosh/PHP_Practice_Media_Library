@@ -1,4 +1,6 @@
 <?php
+$catalog = [];
+//Books
 $catalog[101] = [
 	"title" => "A Design Patterns: Elements of Reusable Object-Oriented Software",
 	"img" => "img/media/design_patterns.jpg",
